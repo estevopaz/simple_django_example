@@ -1,5 +1,7 @@
 # Simple Django example
 
+### Credentials
+
 Admin credentials:
 
 - user: admin
@@ -9,6 +11,9 @@ API user credentials:
 
 - user: api_new
 - pass: admin012
+
+
+### How to test create a new "New":
 
 ```
 curl http://127.0.0.1:8000/api/new \

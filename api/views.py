@@ -30,11 +30,6 @@ def add_new(request):
     '''
     if request.method == 'POST':
         try:
-            ############ XXX: Only for debugging; DELETE ME
-            print('Remove me from source code !')
-            from IPython.core.debugger import Tracer
-            Tracer('Linux')()
-            ############# XXX: Only for debugging; DELETE ME
             json_data = json.loads(request.body.decode('utf8'))
 
             # Authentication
