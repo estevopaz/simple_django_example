@@ -1,0 +1,23 @@
+{% load staticfiles %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'api/style.css' %}" />
+
+{% if news %}
+    <table>
+        <tr>
+            <th>Title</th>
+            <th>Body</th>
+            <th>Publication date</th>
+        </tr>
+        {% for new in news %}
+            <tr>
+                <td>{{ new.title }}</td>
+                <td>{{ new.body }}</td>
+                <td>{{ new.pub_date }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+    </ul>
+{% else %}
+    <p>No recent news !</p>
+{% endif %}
